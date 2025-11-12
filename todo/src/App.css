@@ -1,0 +1,226 @@
+/* 🌅 General App Background */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🧍‍♀️ Signup Page Background */
+.signup-container {
+  background: url('./assets/bg_img.png') no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 📝 Signup Box */
+.signup-box {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  animation: fadeIn 0.7s ease;
+}
+
+/* Signup title and content */
+.signup-box h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.signup-box p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Signup form fields */
+.signup-box input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.signup-box input:focus {
+  border-color: #f8b500;
+  box-shadow: 0 0 4px rgba(248, 181, 0, 0.3);
+}
+
+/* Signup button */
+.signup-box button {
+  background: #f8b500;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.signup-box button:hover {
+  background: #e6a600;
+}
+
+/* Subtext below signup */
+.signup-footer {
+  margin-top: 15px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 🧾 Task Manager Section */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Header */
+.app-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* 🧩 Task Form */
+form {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+form input,
+form select {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  flex: 1;
+  min-width: 120px;
+  transition: all 0.2s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #f8b500;
+  box-shadow: 0 0 0 2px rgba(248, 181, 0, 0.2);
+}
+
+form button {
+  background: #f8b500;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+form button:hover {
+  background: #e6a600;
+}
+
+/* 🗒 Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.task-list li {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.task-list li.completed {
+  background: #e8f5e9;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.task-list li div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-list li small {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.task-list li button {
+  background: #f8b500;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 6px;
+  transition: all 0.2s ease;
+}
+
+.task-list li button:hover {
+  background: #e6a600;
+}
+
+.task-list li button:last-child {
+  background: #ff6b6b;
+}
+
+.task-list li button:last-child:hover {
+  background: #e63946;
+}
+
+/* ✨ Animation for signup fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

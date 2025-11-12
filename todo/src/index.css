@@ -1,0 +1,188 @@
+/* Global Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f2fa; /* soft lavender background */
+  margin: 0;
+  padding: 0;
+  color: #2c2c2c;
+}
+
+/* Center everything on the page */
+.signup, .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full height */
+}
+
+/* Signup Form Styling */
+.signup form {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 35px 45px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  transition: all 0.3s ease;
+}
+
+.signup form:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.signup h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #6a0dad; /* royal purple */
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.signup input {
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #d8b7e0; /* soft pinkish purple */
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.signup input:focus {
+  border-color: #c71585; /* deep pink */
+}
+
+.signup button {
+  padding: 12px;
+  background-color: #c71585; /* deep pink */
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.signup button:hover {
+  background-color: #8b008b; /* dark magenta */
+}
+
+/* Signup footer text styling */
+.signup-text {
+  font-size: 14px;
+  color: #6e5494; /* muted royal purple */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signup-footer {
+  font-size: 12px;
+  color: #a98ccf;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup-footer a {
+  color: #c71585;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+/* TaskBuddy App Styling */
+.App {
+  max-width: 650px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.App:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #6a0dad; /* royal purple */
+  margin-bottom: 25px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+}
+
+/* Task List Styling */
+.task-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #f3e8ff; /* soft lavender card */
+  margin: 8px 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #a98ccf; /* muted royal purple for completed */
+}
+
+/* Button Styling for Task Actions */
+button.complete {
+  background-color: #6a0dad; /* royal purple */
+  color: white;
+}
+
+button.complete:hover {
+  background-color: #8b008b; /* dark magenta */
+}
+
+button.delete {
+  background-color: #ff1493; /* hot pink */
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #c71585; /* deep pink */
+}
+
+button.add {
+  background-color: #c71585; /* deep pink */
+  color: white;
+}
+
+button.add:hover {
+  background-color: #8b008b; /* dark magenta */
+}
+
+/* Progress bar styling */
+.progress {
+  background: #6a0dad; /* royal purple */
+  height: 100%;
+  border-radius: 6px;
+}
